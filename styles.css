@@ -59,3 +59,22 @@ body {
     color: pink;
   }
   
+.pic {
+	position: fixed;
+	right: -120px; 
+	top: 50%;
+	transform: translateY(-50%);
+	animation: slideIn 1s ease-out forwards;
+}
+
+.pic img {
+	width: 100px; 
+	display: block;
+}
+
+@keyframes slideIn {
+	to {
+		right: 0;
+	}
+}
+
