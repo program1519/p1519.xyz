@@ -78,3 +78,40 @@ body {
 	}
 }
 
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .main img {
+    width: 100%; 
+    max-width: 100%;
+  }
+
+  .link, .link2 {
+    position: static;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+
+  .link a, .link2 a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .pic {
+    position: static;
+    transform: none;
+    animation: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .pic img {
+    width: 80px;
+    margin: auto;
+  }
+}
