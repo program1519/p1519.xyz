@@ -1,53 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>program1519!</title>
-    <link rel="shortcut icon" type="image/x-icon" href="img/head.png" />
-    <link rel="stylesheet" href="styles.css?v=4.7">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>program1519!</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css?v=4.7">
+       <link rel="shortcut icon" type="image/x-icon" href="img/head.png" />
 
 </head>
-
 <body>
-<script src="js.js"></script>
-    <div class="link">
-        <a href="https://p1519.xyz/cat/">p1519/cat</a>
-        <a href="https://music.p1519.xyz">music.p1519</a>
-        <a href="https://skin.p1519.xyz/">skin.p1519</a>
-        <a href="https://p1519.xyz/analysis/">p1519/chess</a>
-        <a href="https://p1519.xyz/png/">p1519/png</a>
+  <div class="wrapper">
+    <div class="top-banner">
+      <img src="https://p1519.xyz/404.jpg" alt="Bridge Image" />
     </div>
-    <div class="link2">
-        <a href="https://discord.gg/T5ZZFK9Fym">My discord server!/</a>
-        <a href="https://www.youtube.com/@program1519">youtube/</a>
-        <a href="https://github.com/program1519">github/</a>
-        <a href="https://bsky.app/profile/did:plc:dbqvtdistwt5uenb5vjx77vf">bsky/</a>
-        <a href="https://osu.ppy.sh/users/19329361">My osu profile</a>
-    </div>
-	</div>
-
-
-
-    <div class="main">
-
-        <img src="https://p1519.xyz/img/head.png">
-        <br>
-        <p>program1519! :D</p>
-        <p>Hello 😀 This is my little website, nothing much..</p>
+    <div class="content">
+      <button class="yellow-button">program1519! :D</button>
+      <p class="extra-text">
+       <p>Hello 😀 This is my little website, nothing much..</p>
         <p>I like to code some random things when I feel like it. <a href="https://github.com/program1519">check in
                 github!
                 </a></p>
-                <p class="countdown-text"> <span id="countdown"> </span></p>
+      </p>
+      <p>
+        <a href="https://discord.gg/T5ZZFK9Fym" class="link-back">My discord server!</a>
+         <a href="https://www.youtube.com/@program1519" class="link-back">youtube</a>
+          <a href="https://github.com/program1519" class="link-back">github</a>
+           <a href="https://bsky.app/profile/did:plc:dbqvtdistwt5uenb5vjx77vf" class="link-back">bsky</a>
+            <a href="https://osu.ppy.sh/users/19329361" class="link-back">My osu profile</a><br>
+            <a href="https://p1519.xyz/link.html" class="link-back">My project!</a>
             
-
+      </p>
+      <p class="checkbox-line">
+        <input type="checkbox" checked> test:
+      </p>
+      <p class="agreement">
+        <span id="countdown"> </span>
+      </p>
     </div>
-    <div class="pic">
-	<img src="pic.gif" >
-   </div>
-   <p class="show-on-phone">The website is not supported on mobile Will be fixed soon!! </p>
-    
+    <div class="footer-bar">
+      <div class="footer-left">program1519 Σ(っ °Д °;)っ ©2022-2025</div>
+    </div>
+  </div>
 </body>
+<script>
+
+    const targetDate = new Date('2026-01-01T00:00:00');
+    const countdownElement = document.getElementById("countdown");
+
+    function updateCountdown() {
+        const currentDate = new Date();
+        const timeDifference = targetDate - currentDate;
+
+        if (timeDifference <= 0) {
+            countdownElement.textContent = "Happy New Year! :D";
+        } else {
+
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            countdownElement.textContent = `${days} Days, ${hours} Hours, ${minutes} Minutes, ${seconds} Seconds Until New Year!`;
+        }
+    }
+
+
+    setInterval(updateCountdown, 1000);
+
+
+
+
+</script>
 
 </html>

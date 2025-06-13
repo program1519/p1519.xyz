@@ -1,128 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-
-html {
-    background-color: black;
-    color: white;
-    font-family: "Rubik", sans-serif;
-}
-
-body {
-    display: flex;
-    justify-content: center;  
-    align-items: center;      
-    height: 100vh;
-  
-  }
-  
-  .main {
-    padding: 20px;
-  }
-
-  
-.main img {
-    border: 1px solid #ffffff;
-    width: fit-content; 
-  }
-
-
-  .link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 10px; 
-  }
-  
-  .link a {
-    margin: 5%;
-    display: block; 
-    margin-bottom: 5px; 
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-  }
-  
-  .link2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 10px;
-  }
-  
-  .link2 a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-  }
-
-  a:hover {
-    color: pink;
-  }
-  
-.pic {
-	position: fixed;
-	right: -120px; 
-	top: 50%;
-	transform: translateY(-50%);
-	animation: slideIn 0.5s ease-out forwards;
-}
-
-.pic img {
-	width: 100px; 
-	display: block;
-}
-
-@keyframes slideIn {
-	to {
-		right: 0;
-	}
-}
-
-@media (max-width: 768px) {
   body {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-  }
+      margin: 0;
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: #e6e6e6;
+      background-image: repeating-linear-gradient(
+        45deg,
+        #f0f0f0,
+        #f0f0f0 10px,
+        #e6e6e6 10px,
+        #e6e6e6 20px
+      );
+      color: #000080;
+    }
 
-  .main img {
-    width: 100%; 
-    max-width: 100%;
-  }
- .link, .link2 {
-    position: static;
-    display: block;        
-    padding: 10px 0;
-    text-align: left;      
-  }
-
-  .link a, .link2 a {
-    font-size: 16px;
-    margin: 5px 0;         
-    display: block;
-  }
-
-  .pic {
-    position: static;
-    transform: none;
-    animation: none;
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .pic img {
-    width: 80px;
-    margin: auto;
-  }
+    .wrapper {
+      max-width: 800px;
+      margin: 30px auto;
+      border: 2px solid #000080;
+      background: #fff;
+      box-shadow: 4px 4px 10px #aaa;
   
-}
+    }
 
-.show-on-phone {
-  display: none;
-}
+    .top-banner {
+      position: relative;
+      border-bottom: 2px solid #000080;
+    }
 
-@media (max-width: 768px) {
-  .show-on-phone {
-    display: block;
-  }
-}
+    .top-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-bottom: 2px solid #000080;
+    }
+
+    .content {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .yellow-button {
+      background-color: #fcd440;
+      color: #000;
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      border: 2px solid #b38f00;
+      cursor: pointer;
+      margin-bottom: 10px;
+      box-shadow: 3px 3px 0 #b38f00;
+    }
+
+    .yellow-button:hover {
+      background-color: #f0c000;
+    }
+
+    .checkbox-line {
+      font-size: 14px;
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+
+    .agreement {
+      font-size: 12px;
+      color: #666;
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .extra-text {
+      font-size: 16px;
+      margin: 15px 0;
+      color: #333399;
+    }
+
+    a.link-back {
+      font-size: 14px;
+      text-decoration: none;
+      color: #000080;
+      border: 1px solid #000080;
+      padding: 5px 12px;
+      border-radius: 4px;
+      background-color: #cce0ff;
+      font-weight: bold;
+      box-shadow: 2px 2px 0 #888;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    a.link-back:hover {
+      background-color: #a3c1ff;
+    }
+
+    .footer-bar {
+      background-color: #000080;
+      color: #bbb;
+      font-size: 12px;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 3px double #cce0ff;
+    }
+
+    .footer-bar a {
+      color: #bbb;
+      text-decoration: none;
+      margin-left: 10px;
+    }
