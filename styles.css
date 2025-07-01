@@ -1,6 +1,6 @@
   body {
       margin: 0;
-      font-family: "Comic Sans MS", cursive, sans-serif;
+      font-family: "Karla", sans-serif;
       background: #e6e6e6;
       background-image: repeating-linear-gradient(
         45deg,
@@ -107,3 +107,76 @@
       text-decoration: none;
       margin-left: 10px;
     }
+	
+	
+	.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.dark-mode .wrapper {
+  background: #2b2b2b;
+  border-color: #fcd440;
+  box-shadow: 4px 4px 10px #000;
+}
+
+.dark-mode .top-banner {
+  border-bottom-color: #fcd440;
+}
+
+.dark-mode .top-banner img {
+  border-bottom-color: #fcd440;
+}
+
+.dark-mode .yellow-button {
+  background-color: #555500;
+  color: #fff;
+  border-color: #cccc00;
+  box-shadow: 3px 3px 0 #999900;
+}
+
+.dark-mode .yellow-button:hover {
+  background-color: #777700;
+}
+
+.dark-mode .extra-text {
+  color: #ccccff;
+}
+
+.dark-mode a.link-back {
+  background-color: #444;
+  color: #fcd440;
+  border-color: #fcd440;
+  box-shadow: 2px 2px 0 #111;
+}
+
+.dark-mode a.link-back:hover {
+  background-color: #666;
+}
+
+.dark-mode .footer-bar {
+  background-color: #111;
+  color: #ccc;
+  border-top-color: #555;
+}
+
+.dark-mode .footer-bar a {
+  color: #ccc;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #2a2a2a,
+    #2a2a2a 10px,
+    #1e1e1e 10px,
+    #1e1e1e 20px
+  );
+  color: #f0f0f0;
+}
+
+body, .wrapper {
+  transition: background 0.5s, color 0.5s;
+}
+
