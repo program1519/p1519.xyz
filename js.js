@@ -100,26 +100,26 @@ const time = {
 
 
 
-//some darkModekai
+//some NOdarkModekai
  const kaipaCheckbox = document.getElementById('kaipaToggle');
 
-  window.onload = () => {
-    const kaipaIsDark = localStorage.getItem("darkMode") === "true";
-    kaipaCheckbox.checked = kaipaIsDark;
-    if (kaipaIsDark) {
-      document.body.classList.add("dark-mode");
-    }
-  };
-
-  function toggleKaipa() {
-    if (kaipaCheckbox.checked) {
-      document.body.classList.add("dark-mode");
-      localStorage.setItem("darkMode", "true");
-    } else {
-      document.body.classList.remove("dark-mode");
-      localStorage.setItem("darkMode", "false");
-    }
+window.onload = () => {
+  const kaipaIsLight = localStorage.getItem("lightMode") === "true";
+  kaipaCheckbox.checked = kaipaIsLight;
+  if (kaipaIsLight) {
+    document.body.classList.add("light-mode");
   }
+};
 
-  kaipaCheckbox.addEventListener("change", toggleKaipa);
+function toggleKaipa() {
+  if (kaipaCheckbox.checked) {
+    document.body.classList.add("light-mode");
+    localStorage.setItem("lightMode", "true");
+  } else {
+    document.body.classList.remove("light-mode");
+    localStorage.setItem("lightMode", "false");
+  }
+}
+
+kaipaCheckbox.addEventListener("change", toggleKaipa);
 
